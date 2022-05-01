@@ -1,4 +1,3 @@
-import 'package:clone_messenger/constants.dart';
 import 'package:flutter/material.dart';
 import '../signinOrSignUp/signin_or_signup_screen.dart';
 import 'components/body.dart';
@@ -9,7 +8,7 @@ class ChatsScreen extends StatefulWidget {
 }
 
 class _ChatsScreenState extends State<ChatsScreen> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 1;
   final AuthService _auth = AuthService();
   @override
   Widget build(BuildContext context) {
@@ -81,49 +80,6 @@ class _ChatsScreenState extends State<ChatsScreen> {
           fontWeight: FontWeight.bold,
         ),
       ),
-      // title : Row(
-      //   children: [
-      //       const Text("Chats",
-      //         style: TextStyle(
-      //           color: Colors.black,
-      //           fontSize: 20.0,
-      //           fontWeight: FontWeight.bold,
-      //         ),
-      //       ),
-      //       IconButton(
-      //           onPressed: () async {
-      //             print("Logging Out");
-      //             final snackbar =
-      //             SnackBar(content: Text('Logging Out'));
-      //             ScaffoldMessenger.of(context).showSnackBar(snackbar);
-      //             dynamic result = await _auth
-      //                 .signOut();
-      //             if (result == null) {}
-      //             },
-      //            icon: Icon(Icons.logout),
-      //
-      //
-      //       ),
-      //     ],
-      //   )
-    //   actions: [
-    //     IconButton(
-    //     onPressed: () async {
-    //     print("Logging Out");
-    //     final snackbar =
-    //     SnackBar(content: Text('Logging Out'));
-    //     ScaffoldMessenger.of(context).showSnackBar(snackbar);
-    //     dynamic result = await _auth
-    //       .signOut();
-    //     if (result == null) {}
-    // },
-    // icon: Icon(Icons.logout),
-    //     // IconButton(
-    //     //   icon: Icon(Icons.search),
-    //     //   onPressed: () {},
-    //     // ),
-    //     ),
-    //   ],
     );
   }
 }

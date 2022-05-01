@@ -1,5 +1,4 @@
 import 'package:clone_messenger/Wrapper.dart';
-import 'package:clone_messenger/screens/signinOrSignUp/signin_or_signup_screen.dart';
 import 'package:clone_messenger/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -74,13 +73,3 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
-
-
-// backgroundColor: kContentColorLightTheme,
-
-// onPressed: () => Navigator.push(
-//       context,
-//       MaterialPageRoute(
-//         builder: (context) => SigninOrSignupScreen(),
-//       ),
-//     ),

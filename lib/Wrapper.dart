@@ -1,6 +1,5 @@
 import 'package:clone_messenger/screens/chats/chats_screen.dart';
 import 'package:clone_messenger/screens/signinOrSignUp/signin_or_signup_screen.dart';
-import 'package:clone_messenger/screens/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

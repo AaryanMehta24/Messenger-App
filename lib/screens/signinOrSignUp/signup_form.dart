@@ -1,5 +1,3 @@
-//import 'package:chat/components/primary_button.dart';
-// import 'package:chat/screens/signinOrSignUp/signin_or_signup_screen1.dart';
 import 'package:clone_messenger/screens/signinOrSignUp/signin_or_signup_screen.dart';
 import 'package:clone_messenger/services/auth.dart';
 import 'package:flutter/material.dart';
@@ -118,36 +116,6 @@ class _SignUpState extends State<SignUp> {
                       }
                     },
                   ),
-                  // SizedBox(height: kDefaultPadding * 1.5),
-                  // PrimaryButton(
-                  //   text: "Submit",
-                  //   press: () {
-                  //     if(_formKey.currentState!.validate()){
-                  //       _formKey.currentState!.save();
-                  //
-                  //       ScaffoldMessenger.of(context)
-                  //           .showSnackBar(
-                  //           const SnackBar(
-                  //             backgroundColor: Colors.greenAccent ,
-                  //             content: Text("Form Submitted Successfully :("),
-                  //           ));
-                  //     } else{
-                  //       ScaffoldMessenger.of(context)
-                  //           .showSnackBar(
-                  //           const SnackBar(
-                  //             backgroundColor: Colors.redAccent ,
-                  //              content: Text("Problem Submitting the form :("),
-                  //       ));
-                  //     }
-                  //
-                  // },
-                  //   press: ()  => Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //   builder: (context) => SigninOrSignupScreen(),
-                  // ),
-                  // ),
-                  //),
                   SizedBox(height: kDefaultPadding * 1.5),
                   SizedBox(
                     width: double.infinity,
@@ -159,33 +127,6 @@ class _SignUpState extends State<SignUp> {
                           onPressed : () async {
                               print(email);
                               print(password);
-                              // if(_formKey.currentState!.validate()){
-                              //       _formKey.currentState!.save();
-                              //       dynamic result = await _auth.registerWithEmailAndPassword(email, password);
-                              //       print(result);
-                              //       if(result==null){
-                              //       setState(() => error = 'please enter a valid email');
-                              //       ScaffoldMessenger.of(context)
-                              //           .showSnackBar(
-                              //       const SnackBar(
-                              //       backgroundColor: Colors.redAccent ,
-                              //       content: Text("Enter a valid email"),
-                              //       ));
-                              //       }
-                              //       ScaffoldMessenger.of(context)
-                              //           .showSnackBar(
-                              //           const SnackBar(
-                              //             backgroundColor: Colors.greenAccent ,
-                              //             content: Text("Form Submitted Successfully :)"),
-                              //           ));
-                              //     } else{
-                              //       ScaffoldMessenger.of(context)
-                              //           .showSnackBar(
-                              //           const SnackBar(
-                              //             backgroundColor: Colors.redAccent ,
-                              //              content: Text("Problem Submitting the form :("),
-                              //       ));
-                              //     }
                               if (_formKey.currentState!.validate()) {
                                 final snackbar =
                                 SnackBar(content: Text('Submitted the form'));
@@ -231,21 +172,3 @@ class _SignUpState extends State<SignUp> {
     );
   }
 }
-
-
-// **** Firebase ******
-// final AuthService _auth = AuthService();
-
-// validation for firebase
-// dynamic result = await _auth.registerWithEmailAndPassword(email, password);
-// print(result);
-// if(result==null){
-// setState(() => error = 'please enter a valid email');
-// ScaffoldMessenger.of(context)
-//     .showSnackBar(
-// const SnackBar(
-// backgroundColor: Colors.redAccent ,
-// content: Text("Enter a valid email"),
-// ));
-// }
-
